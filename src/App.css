@@ -1,0 +1,15 @@
+video{
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;
+}
+.video-body{
+  position: absolute;
+  left:0;
+  right:0;
+  overflow: hidden;
+}
+#Reg{
+  z-index: 1;
+  overflow: hidden;
+}

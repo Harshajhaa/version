@@ -1,11 +1,11 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Header() {
     return (
-        <div>
-            <div class="relative w-full ">
-                <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
-                    <div class="inline-flex items-center space-x-2">
+        <div classNameName='header'>
+            <div className="relative w-full ">
+                <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+                    <div className="inline-flex items-center space-x-2">
                         <span>
                             <svg
                                 width="30"
@@ -20,30 +20,50 @@ function Header() {
                                 ></path>
                             </svg>
                         </span>
-                        <span class="font-bold">DevUI</span>
+                        <span className="font-bold bg-white">DevUI</span>
                     </div>
-                    <div class="hidden grow items-start lg:flex">
-                        <ul class="ml-12 inline-flex space-x-8">
+                    <div className="hidden grow items-start lg:flex">
+                        <ul className="ml-12 inline-flex space-x-8">
 
 
                             
                         </ul>
                     </div>
-                    <div class="hidden space-x-2 lg:block">
-                        <button
+                    <div className="hidden space-x-2 lg:block">
+                    <Link to="/">
+                    <button
                             type="button"
-                            class="rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                            className="bg-white rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                         >
-                            Sign In
+                            Home
+                           
                         </button>
+                        </Link>
+                        <Link to="/login">
                         <button
                             type="button"
-                            class="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                            className="bg-white rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                        >
+                              Login    
+                        </button>
+                        </Link>
+                        <Link to="/register">
+                        <button
+                            type="button"
+                            className="bg-white rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                        >
+                            Register
+                        </button>
+                        </Link>
+
+                        {/* <button
+                            type="button"
+                            className="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                         >
                             Log In
-                        </button>
+                        </button> */}
                     </div>
-                    <div class="lg:hidden">
+                    <div className="lg:hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
@@ -54,7 +74,7 @@ function Header() {
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="h-6 w-6 cursor-pointer"
+                            className="h-6 w-6 cursor-pointer"
                         >
                             <line x1="4" y1="12" x2="20" y2="12"></line>
                             <line x1="4" y1="6" x2="20" y2="6"></line>

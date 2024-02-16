@@ -13,6 +13,7 @@ function Layout() {
                 </video>
             </div>
             <Header />
+            
             <Outlet />
 
         </>

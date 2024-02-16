@@ -9,7 +9,23 @@ video{
   right:0;
   overflow: hidden;
 }
-#Reg{
-  z-index: 1;
-  overflow: hidden;
+
+
+.login{
+  position: absolute;
+  z-index: 2;
+  margin-left: 35%;
+}
+.register{
+  position: absolute;
+  z-index: 2;
+  margin-left: 35%;
+}
+.inside
+{
+  width: 20rem;
+}
+.header{
+  background-color: aqua;
+  
 }
